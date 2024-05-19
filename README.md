@@ -1,6 +1,7 @@
 # js-for-react-native-11253112
 # DZIFA ESI DOTSE - 11253112
 
+# TASK 1
 In the first task, users can input a range of numbers (an array). 
 After that, the program squares each even number of the inputted array and returns it.
 If there is an odd number, it is tripled and not squared.
