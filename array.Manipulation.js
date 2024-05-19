@@ -10,3 +10,27 @@ function processArray(numbers) {
     });
   }
   
+  
+  // Task 2: formatArrayStrings function
+function formatArrayStrings(strings, numbers) {
+  if (strings.length !== numbers.length) {
+    throw new Error("Both arrays must have the same length");
+  }
+
+  return strings.map((str, index) => {
+    const num = numbers[index];
+    if (num % 2 === 0) {
+      // Capitalize the entire string if the number is even
+      return str.toUpperCase();
+    } else {
+      // Convert the string to lowercase if the number is odd
+      return str.toLowerCase();
+    }
+  });
+}
+
+// Export functions to be used in other files
+module.exports = {
+  processArray,
+  formatArrayStrings
+}; 
